@@ -4,7 +4,7 @@
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-subagents-orange)](.claude/agents)
 [![Cursor](https://img.shields.io/badge/Cursor-.mdc%20rules-blue)](.cursor/rules)
 [![AGENTS.md](https://img.shields.io/badge/AGENTS.md-compatible-green)](AGENTS.md)
-[![Version](https://img.shields.io/badge/version-0.1.0-lightgrey)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-0.1.1-lightgrey)](CHANGELOG.md)
 
 Free, production-ready **system prompts for AI coding agents**: a severity-ranked **code reviewer**, a root-cause **debugger**, and a **test writer** that runs its tests before it reports on them. Each one ships as a native **Claude Code subagent**, a **Cursor rule**, and an **AGENTS.md** block (for Codex, GitHub Copilot, and other agents), and one command installs them.
 
@@ -44,6 +44,11 @@ The installer never overwrites your files unless you pass `--force`. Running it 
 - Claude Code: "Use the code-reviewer subagent on my staged changes", or let Claude call it automatically.
 - Cursor: mention `@code-reviewer` in chat, or let the agent pick the rule from its description.
 - AGENTS.md tools: "Act as the debugger role from AGENTS.md."
+
+
+## Free rules generator
+
+Need a starter rules file for your stack, not a full subagent? The free [AI coding rules generator](https://coding-agent-prompts.pages.dev/tools/rules-generator/) builds a ready-to-copy `.cursorrules`, `AGENTS.md`, or `CLAUDE.md` in the browser. Pick your stack and which guardrails to switch on, then paste the result into your project. It pairs well with the roles in this repo: use the generator for project-wide defaults, and install the reviewer / debugger / test-writer for task-specific behavior.
 
 ## The honesty rules
 
